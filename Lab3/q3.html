@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/42720e0840.js" crossorigin="anonymous"></script>
+
+    <style>
+        .myDiv {
+            width: 400px;
+            height: 90px;
+            background-color: #E5E7E9;
+            border-radius: 15px;
+            display: inline-block;
+            border-top-left-radius: 26%;
+            border-bottom-left-radius: 26%;
+        }
+        
+        @font-face {
+            font-family: "myFont";
+            src: url(fonts/RobotoCondensed-Light.ttf);
+        }
+        
+        * {
+            font-family: 'myFont';
+        }
+        
+        .myImg {
+            position: absolute;
+            border-radius: 50%;
+            left: 0px;
+            top: 1px;
+        }
+        
+        .close {
+            cursor: pointer;
+            display: inline;
+            /* top: 1px; */
+            position: absolute;
+            top: -28px;
+            left: 25%;
+            color: gray;
+            font-size: 50px;
+        }
+        
+        .name {
+            display: inline;
+            /* top: 1px; */
+            position: absolute;
+            top: 3px;
+            left: 10%;
+            color: gray;
+            font-weight: 700;
+            font-size: 31px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="myDiv"></div>
+        <img src="manIcon.png" height="100px" class="myImg">
+        <p class="name">
+            Mayar Arabi
+        </p>
+        <p class="close">
+            <i class="fas fa-times"></i>
+        </p>
+    </div>
+</body>
+
+</html>

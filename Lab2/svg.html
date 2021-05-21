@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <svg viewbox="0 0 200 200" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+        <circle  id="change" cx="100" cy="100" fill="yellow" r="78" stroke="black" stroke-width="3" 
+        onmouseover="changeColor()" onmouseout="backColor()"/>
+        <g class="eyes" >
+            <circle id="leftEye" cx="61" cy="82" r="12" onmouseover="leftChangeColor()" onmouseout="leftBackColor()"/>
+            <circle id="rightEye" cx="127" cy="82" r="12" onmouseover="rightChangeColor()" onmouseout="rightBackColor()"/>
+        </g>
+        <path d="m136.81 116.53c.69 26.17-64.11 42-81.52-.73" style="fill:none; stroke: black; stroke-width: 3;"
+        onmouseover="changeMouseColor()" onmouseout="backMouseColor()" id="mouse"
+        />
+    </svg>
+    <script>
+        function changeMouseColor() {
+            document.getElementById("mouse").style.fill = "green";
+        }
+
+        function backMouseColor() {
+            document.getElementById("mouse").style.fill = "black";
+        }
+
+        function changeColor() {
+            document.getElementById("change").style.fill = "orange";
+        }
+
+        function backColor() {
+            document.getElementById("change").style.fill = "yellow";
+        }
+
+        function leftChangeColor() {
+            document.getElementById("leftEye").style.fill = "green";
+
+        }
+
+        function leftBackColor() {
+            document.getElementById("leftEye").style.fill = "black";
+
+        }
+
+        function rightBackColor() {
+            document.getElementById("rightEye").style.fill = "black";
+
+        }
+
+        function rightChangeColor() {
+            document.getElementById("rightEye").style.fill = "green";
+
+        }
+    </script>
+</body>
+
+</html>
